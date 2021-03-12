@@ -142,14 +142,14 @@ function main() {
             end = startClone;
         }
 
-        const reminderAnchor = createReminderAnchor({
+        const reminderElement = createReminderElement({
             title,
             details: `Evento para as turmas de ${lastCourses}`,
             start,
             end,
         });
 
-        event.insertAdjacentHTML("beforeend", reminderAnchor);
+        event.insertAdjacentHTML("beforeend", reminderElement);
     });
 }
 
